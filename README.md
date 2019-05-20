@@ -10,3 +10,4 @@ Useful projects, apps and functions that I have made and can reuse.
 ### TODO
 * A string repeater with indiscrimiate variables.
 * A web app 
+* File extension searcher
