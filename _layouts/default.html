@@ -4,21 +4,7 @@
 			<title>{{ page.title }}</title>
 			<!-- link to main stylesheet -->
 			<link rel="stylesheet" type="text/css" href="/css/main.css">
-		</head>
-		<body>
-			<nav>
-	    		<ul>
-	        		<li><a href="/">Home</a></li>
-		        	<li><a href="/about">About</a></li>
-	        		<li><a href="/cv">CV</a></li>
-	        		<li><a href="/blog">Blog</a></li>
-				<li><a href="/cool stuff">Cool Stuff</a></li>
-	    		</ul>
-			</nav>
-			<div class="container">
-			
-			{{ content }}
-
+			<script src="http://code.jquery.com/jquery-latest.js"></script>
 			<script>
 				// Requires jQuery!
 				jQuery.ajax({
@@ -37,6 +23,20 @@
 						});
 					}};
 			</script>
+		</head>
+		<body>
+			<nav>
+	    		<ul>
+	        		<li><a href="/">Home</a></li>
+		        	<li><a href="/about">About</a></li>
+	        		<li><a href="/cv">CV</a></li>
+	        		<li><a href="/blog">Blog</a></li>
+				<li><a href="/cool stuff">Cool Stuff</a></li>
+	    		</ul>
+			</nav>
+			<div class="container">
+			
+			{{ content }}
 			
 			</div><!-- /.container -->
 			<footer>
