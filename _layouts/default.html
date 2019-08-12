@@ -18,6 +18,25 @@
 			<div class="container">
 			
 			{{ content }}
+
+			<script>
+				// Requires jQuery!
+				jQuery.ajax({
+					url: "https://alm.digital.panasonic.com/jira/s/11acba477451fe080b79a690c7464f26-T/90p5h/803001/6411e0087192541a09d88223fb51a6a0/3.0.7/_/download/batch/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector-embededjs/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector-embededjs.js?locale=en-UK&collectorId=cd1df538",
+					type: "get",
+					cache: true,
+					dataType: "script"
+				});
+
+				window.ATL_JQ_PAGE_PROPS =  {
+					"triggerFunction": function(showCollectorDialog) {
+						//Requires that jQuery is available! 
+						jQuery("#myCustomTrigger").click(function(e) {
+							e.preventDefault();
+							showCollectorDialog();
+						});
+					}};
+			</script>
 			
 			</div><!-- /.container -->
 			<footer>
