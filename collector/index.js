@@ -11,16 +11,17 @@ for (var i = 0; i < pokemonTCGBoosterPackImages.length; i++) {
   // Add the image to the row.
   var image = document.createElement("td");
   image.innerHTML = "<img src=resources/" + pokemonTCGBoosterPackImages[i] + ".jpg>";
+
+  // Set a uniform size
+  image.style.maxWidth = '100px';
+  image.style.maxHeight = '100px';
+
   row.appendChild(image);
 
   // Add a checkbox to the row.
   var checkbox = document.createElement("td");
   checkbox.innerHTML = "<input type='checkbox'>";
   row.appendChild(checkbox);
-
-  // Set a uniform size
-  image.style.maxWidth = '100px';
-  image.style.maxHeight = '100px';
 
   // Add the row to the table.
   table.appendChild(row);
