@@ -1,7 +1,7 @@
 // Constant with Pokemon pack images
 var pokemonTCGBoosterPacks = 
 [
-    ["Pack Name"]
+    ["Pack Name", "1", "2", "3", "4"]
     ["LOST ORIGIN", "lost_origin_1", "lost_origin_2", "lost_origin_3", "lost_origin_4"]
 ]
 
@@ -24,14 +24,13 @@ for (var i = 1; i < pokemonTCGBoosterPacks.length - 1; i++) {
   // Add the image to the row.
   for (var j = 0; j < pokemonTCGBoosterPacks[i].length - 1; j++) {
     var image = document.createElement("td");
-    image.textContent = value;
     // Set a uniform size
     image.style.maxWidth = '100px';
     image.style.maxHeight = '100px';
     image.innerHTML = "<img src=resources/" + pokemonTCGBoosterPacks[i][j] + ".jpg>";
     row.appendChild(image);
   }
-  
+
   // Add the row to the table.
   table.appendChild(row);
 }
