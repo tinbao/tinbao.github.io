@@ -18,6 +18,10 @@ for (var i = 0; i < pokemonTCGBoosterPackImages.length; i++) {
   checkbox.innerHTML = "<input type='checkbox'>";
   row.appendChild(checkbox);
 
+  // Set a uniform size
+  image.style.maxWidth = '100px';
+  image.style.maxHeight = '100px';
+
   // Add the row to the table.
   table.appendChild(row);
 }
